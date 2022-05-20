@@ -1,11 +1,3 @@
-#include <stdio.h>
-#include <stdlib.h>
-
-typedef struct cellule{
-    int valeur;
-    struct cellule *suivant;
-}Cellule, *Liste;
-
 Cellule * alloue_cellule(int valeur){
     Cellule *tmp;
     tmp = (Cellule *)malloc(sizeof(Cellule));
